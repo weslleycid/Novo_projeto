@@ -1,0 +1,22 @@
+#user{
+  -fx-background-color: white;
+}
+#user .label{
+  -fx-font-size: 11pt;
+  -fx-text-fill: black;
+}
+.button{
+  -fx-background-color: green;
+  -fx-text-fill: white;
+}
+.button:hover{
+  -fx-background-color: #111;
+  -fx-effect: dropshadow( one-pass-box , #444 , 10 , 0.0 , 0 , 0 );
+}
+.button:focused{
+  -background-color: #555;
+}
+.text-field{
+  -fx-font-size: 11pt;
+  -fx-padding: 10;
+}

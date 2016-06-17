@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.text.Font?>
+<?import com.jfoenix.controls.JFXButton?>
+
+<BorderPane id="user" fx:id="BPmenu" prefHeight="480.0" prefWidth="720.0" stylesheets="@../StyleSheets/Menu.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.controller.Menu">
+   <top>
+       <BorderPane id="borderTop">
+         <top>
+             <HBox>
+                 <Label fx:id="LBtitulo" text="principal" textFill="WHITE">
+                  <font>
+                     <Font size="18.0" />
+                  </font></Label>
+               <padding>
+                  <Insets bottom="5.0" left="5.0" right="5.0" top="5.0" />
+               </padding>
+             </HBox>
+         </top>
+         <bottom>
+             <HBox id="menu" alignment="CENTER">
+                 <padding>
+                     <Insets bottom="0" />
+                 </padding>
+              <JFXButton fx:id="BTprincipal" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" onAction="#onPrincipal" prefHeight="50.0" prefWidth="150.0" text="PRINCIPAL" />
+              <JFXButton fx:id="BTconsultar" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="150.0" text="PRODUTOS" />
+              <JFXButton fx:id="BTusuarios" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" onAction="#onUsuarios" prefHeight="50.0" prefWidth="150.0" text="USUÁRIOS" />
+              <JFXButton fx:id="BTclientes" maxWidth="200.0" minWidth="100.0" mnemonicParsing="false" onAction="#onCliente" prefHeight="50.0" prefWidth="150.0" text="CLIENTES" />
+             </HBox>
+         </bottom>
+       </BorderPane>
+   </top>
+
+   <center>
+     <fx:include source="Principal.fxml" />
+   </center>
+
+</BorderPane>

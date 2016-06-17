@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<GridPane id="user" alignment="CENTER" hgap="5.0" stylesheets="@../../StyleSheets/login-cadastro.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.module.Cadastro_Cliente">
+
+    <padding>
+        <Insets bottom="10.0" left="50.0" right="50.0" />
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints halignment="RIGHT" />
+        <ColumnConstraints hgrow="SOMETIMES" prefWidth="350.0" />
+      <ColumnConstraints />
+    </columnConstraints>
+    <rowConstraints>
+      <RowConstraints prefHeight="50.0" valignment="TOP" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="40.0" vgrow="NEVER" />
+      <RowConstraints prefHeight="50.0" valignment="BOTTOM" vgrow="ALWAYS" />
+    </rowConstraints>
+    <children>
+        <Label prefWidth="105.0" text="cadastro" GridPane.columnIndex="1">
+            <font>
+                <Font size="24.0" />
+            </font>
+        </Label>
+      <TextField fx:id="TFnome" promptText="usuário" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <TextField fx:id="TFemail" promptText="e-mail" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="TFfone" promptText="fone" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <PasswordField fx:id="PFsenha" promptText="senha de até 8 digitos" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <PasswordField fx:id="PFcsenha" promptText="confirme a senha" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+      <TextField fx:id="TFcpf" promptText="cpf" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+      <TextField fx:id="TFcidade" promptText="cidade" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+      <TextField fx:id="TFendereco" promptText="endereço" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+      <TextField fx:id="TFcep" promptText="cep" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+        <HBox alignment="CENTER" spacing="3.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" GridPane.rowIndex="10">
+            <JFXButton defaultButton="true" onAction="#onCadastrar" prefHeight="40.0" prefWidth="220.0" text="cadastrar" HBox.hgrow="ALWAYS" />
+            <JFXButton cancelButton="true" onAction="#onCancelar" prefHeight="40.0" prefWidth="220.0" text="cancelar" HBox.hgrow="ALWAYS" />
+        </HBox>
+      <Label text="nome" GridPane.rowIndex="1" />
+      <Label text="e-mail" GridPane.rowIndex="2" />
+      <Label text="senha" GridPane.rowIndex="4" />
+      <Label text="confirmar senha" GridPane.rowIndex="5" />
+      <Label text="cpf" GridPane.rowIndex="6" />
+      <Label text="cidade" GridPane.rowIndex="7" />
+      <Label text="endereço" GridPane.rowIndex="8" />
+      <Label text="cep" GridPane.rowIndex="9" />
+      <Label text="fone" GridPane.rowIndex="3" />
+    </children>
+   <opaqueInsets>
+      <Insets />
+   </opaqueInsets>
+</GridPane>

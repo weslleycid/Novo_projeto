@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.text.Font?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<FlowPane fx:id="FPlogin" id="user" alignment="center" prefHeight="480" prefWidth="640" stylesheets="@../StyleSheets/login-cadastro.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.application.Login">
+   <children>
+      <GridPane>
+        <columnConstraints>
+          <ColumnConstraints halignment="RIGHT" hgrow="SOMETIMES" prefWidth="50.0" />
+          <ColumnConstraints hgrow="SOMETIMES" minWidth="-Infinity" prefWidth="350.0" />
+        </columnConstraints>
+        <rowConstraints>
+          <RowConstraints prefHeight="50.0" valignment="TOP" />
+          <RowConstraints prefHeight="20.0" valignment="TOP" />
+          <RowConstraints prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
+          <RowConstraints prefHeight="20.0" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="40.0" valignment="TOP" vgrow="SOMETIMES" />
+            <RowConstraints prefHeight="50.0" valignment="BOTTOM" vgrow="SOMETIMES" />
+        </rowConstraints>
+         <children>
+            <Label text="usuário:" GridPane.columnIndex="1" GridPane.rowIndex="1">
+               <padding>
+                  <Insets right="5.0" />
+               </padding></Label>
+            <Label text="senha: " GridPane.columnIndex="1" GridPane.rowIndex="3">
+               <GridPane.margin>
+                  <Insets right="5.0" />
+               </GridPane.margin></Label>
+            <JFXTextField fx:id="TFusuario" promptText="digite nome do usuário" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+            <JFXPasswordField fx:id="PFsenha" promptText="digite a senha" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+            <HBox alignment="CENTER" spacing="3.0" GridPane.columnIndex="1" GridPane.rowIndex="5">
+                <JFXButton fx:id="BTNentrar" defaultButton="true" onAction="#onEntrar" prefHeight="40.0" prefWidth="175.0" text="entrar" />
+                <JFXButton cancelButton="true" onAction="#onSair" prefHeight="40.0" prefWidth="175.0" text="sair" />
+            </HBox>
+            <Label text="login" GridPane.columnIndex="1">
+               <font>
+                  <Font size="24.0" />
+               </font>
+            </Label>
+         </children>
+      </GridPane>
+   </children>
+</FlowPane>

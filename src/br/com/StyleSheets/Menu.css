@@ -1,0 +1,9 @@
+#borderTop{
+  -fx-background-color: #222;
+}
+#menu .button{
+   -fx-background-insets: 0, 0, 1, 0;
+   -fx-background-radius: none;
+   -fx-background-color: #222;
+   -fx-text-fill: #ddd;
+ }

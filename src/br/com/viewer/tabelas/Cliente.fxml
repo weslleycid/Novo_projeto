@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox id="box" minHeight="300.0" minWidth="300.0" stylesheets="@../../StyleSheets/Tabelas.css" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1" fx:controller="br.com.application.TelaCliente">
+    <HBox id="box" alignment="CENTER_RIGHT" minHeight="50.0" prefHeight="50.0">
+        <padding>
+            <Insets left="2" right="2" />
+        </padding>
+            <HBox id="box" alignment="CENTER_LEFT" HBox.hgrow="ALWAYS">
+                <padding>
+                    <Insets left="5" right="5" />
+                </padding>
+            <Button id="reload" mnemonicParsing="false" onAction="#onAtualizar" prefHeight="30.0" prefWidth="30.0" text="" />
+            </HBox>
+        <HBox alignment="CENTER_RIGHT">
+            <TextField fx:id="TFpesquisar" prefHeight="30.0" prefWidth="250.0" promptText="pesquisar" />
+            <Button id="pesquisar" fx:id="BTpesquisar" defaultButton="true" mnemonicParsing="false" onAction="#onPesquisar" prefHeight="30.0" prefWidth="30.0" />
+        </HBox>
+    </HBox>
+     <TableView fx:id="TVclientes" editable="true" tableMenuButtonVisible="true" VBox.vgrow="ALWAYS">
+         <columns>
+             <TableColumn fx:id="TCcodigo" maxWidth="100.0" minWidth="50.0" text="codigo" />
+             <TableColumn fx:id="TCnome" maxWidth="200.0" minWidth="100.0" prefWidth="150.0" text="nome" />
+             <TableColumn fx:id="TCemail" maxWidth="150.0" minWidth="100.0" prefWidth="130.0" text="e-mail" />
+             <TableColumn fx:id="TCfone" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" text="fone" />
+             <TableColumn fx:id="TCsenha" maxWidth="250.0" minWidth="100.0" prefWidth="150.0" text="senha" />
+             <TableColumn fx:id="TCcpf" maxWidth="200.0" minWidth="50.0" prefWidth="120.0" text="cpf" />
+             <TableColumn fx:id="TCstatus" maxWidth="100.0" minWidth="30.0" prefWidth="70.0" text="status" />
+             <TableColumn fx:id="TCdatCadastro" maxWidth="200.0" minWidth="50.0" prefWidth="170.0" text="data de cadastro" />
+             <TableColumn fx:id="TCendereco" maxWidth="350.0" minWidth="100.0" prefWidth="150.0" text="endereço" />
+             <TableColumn fx:id="TCcep" maxWidth="150.0" minWidth="50.0" prefWidth="120.0" text="cep" />
+         </columns>
+     </TableView>
+  
+   <HBox alignment="CENTER_RIGHT" minHeight="50.0" prefHeight="50" spacing="10">
+       <padding>
+           <Insets left="5" right="5" />
+       </padding>
+       <JFXButton onAction="#onCadastrar" text="cadastrar" />
+       <JFXButton text="editar" />
+       <JFXButton onAction="#onExcluir" text="excluir" />
+   </HBox>
+</VBox>

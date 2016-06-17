@@ -1,0 +1,52 @@
+#atividades {
+  -fx-background-color: white;
+  -fx-grid-lines-visible: false;
+  -fx-border-color: #ddd;
+  -fx-effect: dropshadow(three-pass-box, #ddd, 2, 0, 0, 0);
+  -fx-border-width: 1px;
+}
+#atividades #aT{
+  -fx-font-size: 14pt;
+  -fx-text-fill: #666;
+}
+#toCliente{
+  -fx-background-image: url("../images/eco_color/users3.png");
+  -fx-background-repeat: stretch;
+  -fx-background-size: 50 50;
+  -fx-background-position: center center;
+  -fx-background-color: white;
+  -fx-border-color: #ddd;
+  -fx-effect: dropshadow(three-pass-box, #ddd, 3, 0, 0, 0);
+}
+#toLucro{
+  -fx-background-image: url("../images/chart-icon.png");
+  -fx-background-repeat: stretch;
+  -fx-background-size: 50 50;
+  -fx-background-position: center center;
+  -fx-background-color: white;
+  -fx-border-color: #ddd;
+  -fx-effect: dropshadow(three-pass-box, #ddd, 3, 0, 0, 0);
+}
+#info #Ltotalc,#Ltotalc2{
+  -fx-text-fill: #FF4500;
+  -fx-font-size: 10pt;
+}
+#graph{
+  -fx-background-color: white;
+}
+.chart-plot-background {
+    -fx-background-color: white;
+}
+.chart-vertical-grid-lines {
+    -fx-stroke: #eee;
+}
+.chart-horizontal-grid-lines {
+    -fx-stroke: #eee;
+}
+.axis {
+    -fx-tick-label-fill: #914800;
+    -fx-font-family: Tahoma;
+}
+.axis-label {
+   -fx-text-fill: #462300;
+}
